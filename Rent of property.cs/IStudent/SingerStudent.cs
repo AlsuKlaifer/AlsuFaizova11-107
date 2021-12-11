@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Study.IStudent
 {
-    class SingerStudent : Student, ISinger, ITheory
+    class SingerStudent : Student, ISinger
     {
         public SingerStudent(string s): base(s)
         {
@@ -24,7 +24,7 @@ namespace Study.IStudent
             Sing();
         }
 
-        public void StudyTheory()
+        public override void StudyTheory()
         {
             Console.WriteLine("Singer student studys a theory.");
         }

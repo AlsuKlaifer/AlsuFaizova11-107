@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Study.IStudent
 {
-    public abstract class Student
+    public abstract class Student: ITheory
     {
         private string fio;
         public string FIO { get { return fio; } }
@@ -16,5 +16,7 @@ namespace Study.IStudent
         }
         public int YearsOfStudy { get; set; }
         public abstract void Study();
+
+        public abstract void StudyTheory();
     }
 }

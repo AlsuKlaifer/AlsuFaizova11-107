@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>Rent_of_property.cs</RootNamespace>
+    <RootNamespace>Study.cs</RootNamespace>
   </PropertyGroup>
 
 </Project>

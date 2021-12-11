@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Study.IStudent
 {
-    class CinemaActorStudent : Student, IActor, ITheory
+    class CinemaActorStudent : Student, IActor
     {
         public CinemaActorStudent(string s): base(s) { }
         public void Play()
@@ -20,7 +20,7 @@ namespace Study.IStudent
             Play();
         }
 
-        public void StudyTheory()
+        public override void StudyTheory()
         {
             Console.WriteLine("Cinema actor Student studys a theory.");
         }

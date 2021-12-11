@@ -36,7 +36,7 @@ namespace Study
         {
             return new Rationcomplex(
                 real.Mult(n.real).Add(image.Mult(n.image)),
-                real.Mult(n.image).Add(image.Mult(n.real)))
+                real.Mult(n.image).Add(image.Mult(n.real)));
         }
         public override string ToString()
         {

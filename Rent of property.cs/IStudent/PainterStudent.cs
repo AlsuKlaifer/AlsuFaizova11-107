@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Study.IStudent
 {
-    class PainterStudent : Student, IPainter, ITheory
+    class PainterStudent : Student, IPainter
     {
         public PainterStudent(string s) : base(s)
         { }
-        public void ApplyPaint()
+        void IPainter.ApplyPaint()
         {
             Console.WriteLine("Painter Student applies a paints.");
         }
 
-        public void MakeSketch()
+        void IPainter.MakeSketch()
         {
             Console.WriteLine("Painter Student makes a sketch.");
         }
@@ -23,11 +23,11 @@ namespace Study.IStudent
         public override void Study()
         {
             StudyTheory();
-            MakeSketch();
-            ApplyPaint();
+            ((IPainter)this).MakeSketch();
+            ((IPainter)this).ApplyPaint();
         }
 
-        public void StudyTheory()
+        public override void StudyTheory()
         {
             Console.WriteLine("Painter Student studys a theory.");
         }
